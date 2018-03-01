@@ -1,8 +1,8 @@
 <?php
+namespace PhpHomework11;
+
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
-
-namespace PhpHomework11;
 
 class TV extends Product
 {

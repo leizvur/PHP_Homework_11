@@ -1,5 +1,4 @@
 <?php
-
 namespace PhpHomework11;
 
 function ProductLoad($className)
