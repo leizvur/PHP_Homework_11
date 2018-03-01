@@ -1,10 +1,12 @@
 <?php
-namespace PhpHomework11;
+
+$_SERVER["DOCUMENT_ROOT"];
+//var_dump($_SERVER["DOCUMENT_ROOT"]);
 
 function ProductLoad($className)
 {
-	$className="product_base";
-	$filePath="./Classes/Base/" . $className . ".class.php";
+	$className="\Classes\Base\product_base";
+	$filePath=$_SERVER["DOCUMENT_ROOT"] . str_replace("\\", DIRECTORY_SEPARATOR, $className) . ".class.php";
 	if (file_exists($filePath)) 
 	{
 		include_once "$filePath";
@@ -17,8 +19,8 @@ function ProductLoad($className)
 
 function CarsLoad($className)
 {
-	$className="cars";
-	$filePath="./Classes/Cars/" . $className . ".class.php";
+	$className="\Classes\Cars\cars";
+	$filePath=$_SERVER["DOCUMENT_ROOT"] . str_replace("\\", DIRECTORY_SEPARATOR, $className) . ".class.php";
 	if (file_exists($filePath)) 
 	{
 		include_once "$filePath";
@@ -31,8 +33,8 @@ function CarsLoad($className)
 
 function DucksLoad($className)
 {
-	$className="ducks";
-	$filePath="./Classes/Ducks/" . $className . ".class.php";
+	$className="\Classes\Ducks\ducks";
+	$filePath=$_SERVER["DOCUMENT_ROOT"] . str_replace("\\", DIRECTORY_SEPARATOR, $className) . ".class.php";
 	if (file_exists($filePath)) 
 	{
 		include_once "$filePath";
@@ -45,8 +47,8 @@ function DucksLoad($className)
 
 function TvLoad($className)
 {
-	$className="tvs";
-	$filePath="./Classes/TVs/" . $className . ".class.php";
+	$className="\Classes\TVs\Tvs";
+	$filePath=$_SERVER["DOCUMENT_ROOT"] . str_replace("\\", DIRECTORY_SEPARATOR, $className) . ".class.php";
 	if (file_exists($filePath)) 
 	{
 		include_once "$filePath";
@@ -59,8 +61,8 @@ function TvLoad($className)
 
 function PensLoad($className)
 {
-	$className="pens";
-	$filePath="./Classes/Pens/" . $className . ".class.php";
+	$className="\Classes\Pens\pens";
+	$filePath=$_SERVER["DOCUMENT_ROOT"] . str_replace("\\", DIRECTORY_SEPARATOR, $className) . ".class.php";
 	if (file_exists($filePath)) 
 	{
 		include_once "$filePath";
