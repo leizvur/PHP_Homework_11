@@ -1,10 +1,10 @@
 <?php
-namespace Classes;
+namespace Classes
 
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-class Car extends Product
+class Cars extends Product
 {
 	public $transmission; // тип коробки передач
 	public $package; // комплектация
@@ -54,4 +54,5 @@ class Car extends Product
 		}
 	}
 }
+	
 ?>

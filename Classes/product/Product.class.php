@@ -4,7 +4,12 @@ namespace Classes;
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-abstract class Product
+interface ProductDescriptionInterface
+{
+	public function getProductDescription($productPrice);
+}
+
+abstract class Product implements ProductDescriptionInterface
 {
 	public $productName;
 	public $productType;
@@ -32,5 +37,4 @@ abstract class Product
 		echo "</pre>";
 	}
 }
-
 ?>

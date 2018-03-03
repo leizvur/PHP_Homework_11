@@ -4,7 +4,7 @@ namespace Classes;
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-class Duck extends Product
+class Ducks extends Product
 {
 	public $food; //корм для уток
 	public $sex; //пол утки

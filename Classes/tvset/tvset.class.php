@@ -4,7 +4,7 @@ namespace Classes;
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-class TV extends Product
+class TVset extends Product
 {
 	public $lighting; // подсветка
 	public $diagonal; //диагональ экрана
